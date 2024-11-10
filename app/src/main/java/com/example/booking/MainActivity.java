@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 if (tenDangNhap.length() > 0 && matKhau.length() > 0) {
                     TaiKhoan taiKhoan = mySQLite.kiemTraDangNhap(tenDangNhap, matKhau);
                     String msg = taiKhoan.getRole() == 0 ? "dung" : "sai";
-                    Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                     if (taiKhoan.getId() >= 0 && taiKhoan.getRole() >= 0) {
                         if (taiKhoan.getRole() == 0) {
                             Intent intentQuanTri = new Intent(MainActivity.this, HomeAdmin.class);
