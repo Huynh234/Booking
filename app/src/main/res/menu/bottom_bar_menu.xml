@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
-        android:title="Home" />
+        android:id="@+id/nav_ad_room"
+        android:icon="@drawable/ic_ad_room"
+        android:title="Phòng" />
     <item
-        android:id="@+id/nav_dashboard"
-        android:icon="@drawable/ic_dashboard"
-        android:title="Dashboard" />
+        android:id="@+id/nav_ad_room_type"
+        android:icon="@drawable/ic_ad_room_type"
+        android:title="Loại phòng" />
     <item
-        android:id="@+id/nav_notifications"
-        android:icon="@drawable/ic_notifications"
-        android:title="Notifications" />
+        android:id="@+id/nav_ad_offer"
+        android:icon="@drawable/ic_ad_offer"
+        android:title="Ưu đãi" />
+    <item
+        android:id="@+id/nav_ad_service"
+        android:icon="@drawable/ic_ad_service"
+        android:title="Dịch vụ" />
+    <item
+        android:id="@+id/nav_ad_comment"
+        android:icon="@drawable/ic_ad_comment"
+        android:title="Bình luận" />
+
 </menu>

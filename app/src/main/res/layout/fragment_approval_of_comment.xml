@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Page.Admin.FragmentAdmin.homeFragment">
+    tools:context=".Page.Admin.FragmentAdmin.ApprovalOfComment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Đây là home" />
+        android:text="Đây là trang phê duyệt đánh giá" />
 
 </FrameLayout>

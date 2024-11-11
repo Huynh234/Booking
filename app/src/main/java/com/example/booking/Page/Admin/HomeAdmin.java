@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.booking.Model.TaiKhoan;
-import com.example.booking.Page.Admin.FragmentAdmin.dashBoardFragment;
-import com.example.booking.Page.Admin.FragmentAdmin.homeFragment;
-import com.example.booking.Page.Admin.FragmentAdmin.notificationsFragment;
+import com.example.booking.Page.Admin.FragmentAdmin.ApprovalOfComment;
+import com.example.booking.Page.Admin.FragmentAdmin.ManageOffers;
+import com.example.booking.Page.Admin.FragmentAdmin.RoomManager;
+import com.example.booking.Page.Admin.FragmentAdmin.RoomTypeManagement;
+import com.example.booking.Page.Admin.FragmentAdmin.ServiceManagement;
 import com.example.booking.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -37,7 +39,7 @@ public class HomeAdmin extends AppCompatActivity {
         // Load fragment mặc định
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, new homeFragment())
+                    .replace(R.id.fragment_container, new RoomManager())
                     .commit();
         }
 
@@ -46,15 +48,19 @@ public class HomeAdmin extends AppCompatActivity {
     public final BottomNavigationView.OnNavigationItemSelectedListener navListener =
             item -> {
                 Fragment selectedFragment = null;
-                if (item.getItemId() == R.id.nav_home) {
-                    selectedFragment = new homeFragment();
-                } else if (item.getItemId() == R.id.nav_dashboard) {
-                    selectedFragment = new dashBoardFragment();
-                } else if (item.getItemId() == R.id.nav_notifications) {
-                    selectedFragment = new notificationsFragment();
+                if (item.getItemId() == R.id.nav_ad_room) {
+                    selectedFragment = new RoomManager();
+                } else if (item.getItemId() == R.id.nav_ad_room_type) {
+                    selectedFragment = new RoomTypeManagement();
+                } else if (item.getItemId() == R.id.nav_ad_offer) {
+                    selectedFragment = new ManageOffers();
+                }else if (item.getItemId() == R.id.nav_ad_service) {
+                    selectedFragment = new ServiceManagement();
+                } else if (item.getItemId() == R.id.nav_ad_comment) {
+                    selectedFragment = new ApprovalOfComment();
                 } else {
                     // Fragment mặc định
-                    selectedFragment = new homeFragment();
+                    selectedFragment = new RoomManager();
                 }
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.fragment_container, selectedFragment)

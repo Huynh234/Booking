@@ -1,4 +1,4 @@
-package com.example.booking.Page.Admin.FragmentAdmin;
+package com.example.booking.Page.Customer.FragmentCustomer;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.booking.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link notificationsFragment#newInstance} factory method to
+ * Use the {@link FindRoom#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class notificationsFragment extends Fragment {
+public class FindRoom extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class notificationsFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public notificationsFragment() {
+    public FindRoom() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class notificationsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment notificationsFragment.
+     * @return A new instance of fragment FindRoom.
      */
     // TODO: Rename and change types and number of parameters
-    public static notificationsFragment newInstance(String param1, String param2) {
-        notificationsFragment fragment = new notificationsFragment();
+    public static FindRoom newInstance(String param1, String param2) {
+        FindRoom fragment = new FindRoom();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class notificationsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notifications, container, false);
+        return inflater.inflate(R.layout.fragment_find_room, container, false);
     }
 }

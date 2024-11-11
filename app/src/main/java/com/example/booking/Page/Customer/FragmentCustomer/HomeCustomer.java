@@ -1,4 +1,4 @@
-package com.example.booking.Page.Admin.FragmentAdmin;
+package com.example.booking.Page.Customer.FragmentCustomer;
 
 import android.os.Bundle;
 
@@ -12,10 +12,10 @@ import com.example.booking.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link dashBoardFragment#newInstance} factory method to
+ * Use the {@link HomeCustomer#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class dashBoardFragment extends Fragment {
+public class HomeCustomer extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -26,7 +26,7 @@ public class dashBoardFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public dashBoardFragment() {
+    public HomeCustomer() {
         // Required empty public constructor
     }
 
@@ -36,11 +36,11 @@ public class dashBoardFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment dashBoardFragment.
+     * @return A new instance of fragment HomeCustomer.
      */
     // TODO: Rename and change types and number of parameters
-    public static dashBoardFragment newInstance(String param1, String param2) {
-        dashBoardFragment fragment = new dashBoardFragment();
+    public static HomeCustomer newInstance(String param1, String param2) {
+        HomeCustomer fragment = new HomeCustomer();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,6 +61,6 @@ public class dashBoardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dash_board, container, false);
+        return inflater.inflate(R.layout.fragment_home_customer, container, false);
     }
 }

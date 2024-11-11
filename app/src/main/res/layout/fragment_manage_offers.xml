@@ -3,12 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Page.Admin.FragmentAdmin.notificationsFragment">
+    tools:context=".Page.Admin.FragmentAdmin.ManageOffers">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Đây là thông báo" />
+        android:text="đây là trang quản lý ưu đãi" />
 
 </FrameLayout>
